@@ -1568,14 +1568,14 @@ hr.tseparator-divisor{
  background-color: #FFFFFF !important;
   width: 100% !important;
   color: #000000 !important;
-  border: 1px solid #000000 !important;
+  border: 1px solid #FFFFFF !important;
   font-size: 30px !important;
   padding: 40px 60px !important;
 }
 .horario:hover {
  background-color: #FFFFFF !important;
   color: #000000 !important;
-  border: 1px solid #000000 !important;
+  border: 1px solid #FFFFFF !important;
 }
 .horario i {
  color: #000000 !important;
