@@ -131,8 +131,8 @@ TScript::create("$('#tbutton_horaRelogio').prop('disabled', true);");
                 TScript::create("$('#tbutton_button_1_entrar').prop('disabled', true);");
             }
 
-        TScript::create("$('#tbutton_button_3_retorno').prop('disabled', true);");
-        TScript::create("$('#tbutton_button_4_saida').prop('disabled', true);");
+        TScript::create("$('#tbutton_retornoPausa').prop('disabled', true);");
+        TScript::create("$('#tbutton_saida').prop('disabled', true);");
 
         }
         catch (Exception $e) 
