@@ -79,7 +79,7 @@ class pontoEletronico extends TPage
         $container->class = 'form-container';
         if(empty($param['target_container']))
         {
-            $container->add(TBreadCrumb::create(["Ponto","Ponto"]));
+            // $container->add(new TXMLBreadCrumb('menu.xml', __CLASS__));
         }
         $container->add($this->form);
 
@@ -123,6 +123,7 @@ TScript::create("$('#tbutton_horaRelogio').prop('disabled', true);");
         try 
         {
 
+         TTransaction::open('erpbase');
            $data = $this->form->getData();
 
            $id = TSession::getValue('userid');
@@ -142,6 +143,8 @@ TScript::create("$('#tbutton_horaRelogio').prop('disabled', true);");
 
         TScript::create("$('#tbutton_retornoPausa').prop('disabled', true);");
         TScript::create("$('#tbutton_saida').prop('disabled', true);");
+
+        TTransaction::close();
 
         }
         catch (Exception $e) 
