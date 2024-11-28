@@ -17,14 +17,9 @@
   <menuitem label="Funcionarios">
     <icon>far:user fa-fw </icon>
     <menu>
-      <menuitem label="Cadastrar Funcionários">
-        <icon>fas:address-card fa-fw </icon>
-        <menu>
-          <menuitem label="Funcionarios">
-            <icon>fas:child fa-fw </icon>
-            <action>FuncionariosHeaderList#method=onShow</action>
-          </menuitem>
-        </menu>
+      <menuitem label="Funcionarios">
+        <icon>fas:child fa-fw </icon>
+        <action>FuncionariosHeaderList#method=onShow</action>
       </menuitem>
     </menu>
   </menuitem>

@@ -1,10 +1,3 @@
-<?php 
-return[
-    'host' => "127.0.0.1",
-    'name' => "erpbase",
-    'user' => "root",
-    'pass' => "",
-    'type' => "mysql",
-    'prep' => "1",
-    'slog' => "SystemSqlLogService"
-];
+<?php
+$unit_database = TSession::getValue('unit_database');
+return TConnection::getDatabaseInfo($unit_database);
