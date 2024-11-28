@@ -128,7 +128,7 @@ TScript::create("$('#tbutton_horaRelogio').prop('disabled', true);");
             var_dump($data);
            if (!empty($data)) {
                 // Desabilitar o botão 'Entrar'
-                TScript::create("$('#tbutton_button_1_entrar').prop('disabled', true);");
+                TScript::create("$('#tbutton_entrada').prop('disabled', true);");
             }
 
         TScript::create("$('#tbutton_retornoPausa').prop('disabled', true);");
