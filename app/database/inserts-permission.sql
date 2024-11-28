@@ -1,0 +1,8 @@
+INSERT INTO system_group (id, name, uuid) VALUES( (SELECT max(g.id) + 1 FROM system_group g) , 'Ponto', '0a11ea7d-377b-4cbd-9229-d4ad9fc68323');
+INSERT INTO system_user_group (id, system_group_id, system_user_id) VALUES((SELECT max(ug.id) + 1 FROM system_user_group ug), (SELECT max(g.id) FROM system_group g), 1);
+INSERT INTO system_program (id,name,controller) VALUES( (SELECT max(p.id) + 1 FROM system_program p) , 'Ponto', 'pontoEletronico');
+INSERT INTO system_group_program (id, system_group_id, system_program_id) VALUES( (SELECT max(gp.id) + 1 FROM system_group_program gp), (SELECT max(g.id) FROM system_group g) , (SELECT max(p.id) FROM system_program p where p.controller = 'pontoEletronico'));
+INSERT INTO system_program (id,name,controller) VALUES( (SELECT max(p.id) + 1 FROM system_program p) , 'Funcionarios', 'FuncionariosHeaderList');
+INSERT INTO system_group_program (id, system_group_id, system_program_id) VALUES( (SELECT max(gp.id) + 1 FROM system_group_program gp), (SELECT max(g.id) FROM system_group g) , (SELECT max(p.id) FROM system_program p where p.controller = 'FuncionariosHeaderList'));
+INSERT INTO system_program (id,name,controller) VALUES( (SELECT max(p.id) + 1 FROM system_program p) , 'Cadastro de Funcionarios', 'FuncionariosForm');
+INSERT INTO system_group_program (id, system_group_id, system_program_id) VALUES( (SELECT max(gp.id) + 1 FROM system_group_program gp), (SELECT max(g.id) FROM system_group g) , (SELECT max(p.id) FROM system_program p where p.controller = 'FuncionariosForm'));
