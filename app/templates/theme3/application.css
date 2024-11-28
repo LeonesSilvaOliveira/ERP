@@ -1585,4 +1585,24 @@ hr.tseparator-divisor{
 .horario:hover i {
  color: #000000 !important;
   color: #000000 !important;
+}.entrar {
+ background-color: #009688 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #000000 !important;
+  font-size: 40px !important;
+  padding: 4px 8px !important;
+}
+.entrar:hover {
+ background-color: #009688 !important;
+  color: #000000 !important;
+  border: 1px solid #000000 !important;
+}
+.entrar i {
+ color: #FFFFFF !important;
+  font-size: 40px !important;
+  color: #FFFFFF !important;
+}
+.entrar:hover i {
+ color: #000000 !important;
+  color: #000000 !important;
 }
