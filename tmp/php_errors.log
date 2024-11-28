@@ -1,0 +1,416 @@
+[28-Nov-2024 14:50:34 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:36 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:36 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:48 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:49 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:49 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:49 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:49 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:50 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:50 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:50 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:50 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:50 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:51 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:51 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:51 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:50:51 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:51:44 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:51:45 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:51:45 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:51:45 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:51:46 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:51:46 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:51:46 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:51:48 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:51:49 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:51:49 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:52:24 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:52:26 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:52:28 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:52:30 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [2002] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 14:53:08 America/Sao_Paulo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php:116
+Stack trace:
+#0 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(116): PDO->__construct('mysql:host=127....', '', Object(SensitiveParameterValue), Array)
+#1 C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php(47): Adianti\Database\TConnection::openArray(Array)
+#2 C:\xampp\htdocs\ERP\lib\adianti\database\TTransaction.php(63): Adianti\Database\TConnection::open('log')
+#3 C:\xampp\htdocs\ERP\app\service\log\SystemAccessLogService.class.php(59): Adianti\Database\TTransaction::open('log')
+#4 C:\xampp\htdocs\ERP\app\control\admin\LoginForm.php(372): SystemAccessLogService::registerLogout()
+#5 [internal function]: LoginForm::onLogout(Array)
+#6 C:\xampp\htdocs\ERP\lib\adianti\core\AdiantiCoreApplication.php(82): call_user_func(Array, Array)
+#7 C:\xampp\htdocs\ERP\engine.php(56): Adianti\Core\AdiantiCoreApplication::run('0')
+#8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
+#9 {main}
+  thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
