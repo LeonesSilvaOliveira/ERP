@@ -49,7 +49,7 @@ class pontoEletronico extends TPage
         $entrada->setAction(new TAction([$this, 'onEntrada']), "1 - Entrar");
         $retornoPausa->setAction(new TAction([$this, 'onRetorno']), "3 - Retorno");
 
-        $entrada->addStyleClass('entrar');
+        $entrada->addStyleClass('btn-info');
         $pausa->addStyleClass('btn-default');
         $saida->addStyleClass('btn-default');
         $horaRelogio->addStyleClass('horario');
