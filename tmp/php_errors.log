@@ -570,3 +570,9 @@ Stack trace:
 #8 C:\xampp\htdocs\ERP\engine.php(108): TApplication::run()
 #9 {main}
   thrown in C:\xampp\htdocs\ERP\lib\adianti\database\TConnection.php on line 116
+[28-Nov-2024 16:12:02 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ERP\app\control\install\DatabaseInstall.class.php on line 63
+[28-Nov-2024 16:12:02 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ERP\app\control\install\DatabaseInstall.class.php on line 138
+[28-Nov-2024 16:12:16 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ERP\app\control\install\DatabaseInstall.class.php on line 63
+[28-Nov-2024 16:12:16 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ERP\app\control\install\DatabaseInstall.class.php on line 138
+[28-Nov-2024 16:13:04 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ERP\app\control\install\DatabaseInstall.class.php on line 63
+[28-Nov-2024 16:13:04 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ERP\app\control\install\DatabaseInstall.class.php on line 138
