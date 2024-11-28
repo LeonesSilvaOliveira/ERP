@@ -133,9 +133,9 @@ TScript::create("$('#tbutton_horaRelogio').prop('disabled', true);");
           $func = Funcionarios::where('user_id', '=', $id)
                               ->orderBy('id')
                               ->load();
-
+           echo('<pre>');
            var_dump($func);
-
+           echo('</pre>');
            if (!empty($data)) {
                 // Desabilitar o botão 'Entrar'
                 TScript::create("$('#tbutton_entrada').prop('disabled', true);");
