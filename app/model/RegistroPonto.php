@@ -11,7 +11,6 @@ class RegistroPonto extends TRecord
     const UPDATEDAT  = 'updated_at';
 
     private $fk_id;
-    private $user;
 
     
 
@@ -59,32 +58,6 @@ class RegistroPonto extends TRecord
     
         // returns the associated object
         return $this->fk_id;
-    }
-    /**
-     * Method set_system_users
-     * Sample of usage: $var->system_users = $object;
-     * @param $object Instance of SystemUsers
-     */
-    public function set_user(SystemUsers $object)
-    {
-        $this->user = $object;
-        $this->user_id = $object->id;
-    }
-
-    /**
-     * Method get_user
-     * Sample of usage: $var->user->attribute;
-     * @returns SystemUsers instance
-     */
-    public function get_user()
-    {
-        TTransaction::open('permission');
-        // loads the associated object
-        if (empty($this->user))
-            $this->user = new SystemUsers($this->user_id);
-        TTransaction::close();
-        // returns the associated object
-        return $this->user;
     }
 
     

@@ -55,11 +55,15 @@ class Funcionarios extends TRecord
      */
     public function get_user()
     {
-        TTransaction::open('permission');
+        try{
+        TTransaction::openFake('permission');
         // loads the associated object
         if (empty($this->user))
             $this->user = new SystemUsers($this->user_id);
         TTransaction::close();
+        }catch(Exception $e){
+            TTransaction::close();
+        }
         // returns the associated object
         return $this->user;
     }

@@ -124,21 +124,25 @@ TScript::create("$('#tbutton_horaRelogio').prop('disabled', true);");
         {
 
          TTransaction::open('erpbase');
-           $data = $this->form->getData();
+          $data = $this->form->getData();
 
-           $id = TSession::getValue('userid');
+          $id = TSession::getValue('userid');
 
-           $name = TSession::getValue('username');
+          $name = TSession::getValue('username');
 
           $func = Funcionarios::where('user_id', '=', $id)
                               ->orderBy('id')
                               ->load();
-           echo('<pre>');
-           var_dump($func);
-           echo('</pre>');
+
            if (!empty($data)) {
                 // Desabilitar o botão 'Entrar'
                 TScript::create("$('#tbutton_entrada').prop('disabled', true);");
+
+                $pont = new RegistroPonto();
+                $pont->data = '28-11-2024';
+                $pont->hora_entrada = $data->horarioAtualHidden;
+                $pont->store();
+
             }
 
         TScript::create("$('#tbutton_retornoPausa').prop('disabled', true);");
