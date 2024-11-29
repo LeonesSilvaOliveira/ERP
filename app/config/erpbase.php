@@ -1,8 +1,8 @@
 <?php
 return [
     'host' => "127.0.0.1", 
-    'user' => "leoteste2", 
-    'pass' => "1234", 
+    'user' => "root", 
+    'pass' => "", 
     'type' => "mysql", 
     'port' => "3306", 
     'name' => "erpbase2", 
