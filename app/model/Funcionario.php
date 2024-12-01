@@ -1,6 +1,6 @@
 <?php
 
-class Funcionarios extends TRecord
+class Funcionario extends TRecord
 {
     const TABLENAME  = 'funcionarios';
     const PRIMARYKEY = 'id';
