@@ -130,7 +130,7 @@ TScript::create("$('#tbutton_horaRelogio').prop('disabled', true);");
 
           $name = TSession::getValue('username');
 
-          $func = Funcionarios::where('user_id', '=', $id)
+          $func = Funcionario::where('user_id', '=', $id)
                               ->orderBy('id')
                               ->load();
 
