@@ -8,7 +8,7 @@ class FuncionariosHeaderList extends TPage
     private $loaded;
     private $filter_criteria;
     private static $database = 'erpbase';
-    private static $activeRecord = 'Funcionarios';
+    private static $activeRecord = 'Funcionario';
     private static $primaryKey = 'id';
     private static $formName = 'formList_Funcionarios';
     private $showMethods = ['onReload', 'onSearch'];
@@ -165,7 +165,7 @@ class FuncionariosHeaderList extends TPage
                 TTransaction::open(self::$database);
 
                 // instantiates object
-                $object = new Funcionarios($key, FALSE); 
+                $object = new Funcionario($key, FALSE); 
 
                 // deletes the object from the database
                 $object->delete();
@@ -597,7 +597,7 @@ class FuncionariosHeaderList extends TPage
             TTransaction::open(self::$database);    
         }
 
-        $object = new Funcionarios($id);
+        $object = new Funcionario($id);
 
         $row = $list->datagrid->addItem($object);
         $row->id = "row_{$object->id}";
