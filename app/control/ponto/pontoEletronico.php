@@ -130,16 +130,13 @@ TScript::create("$('#tbutton_horaRelogio').prop('disabled', true);");
 
           $name = TSession::getValue('username');
 
-          $func = Funcionario::where('user_id', '=', $id)
-                              ->orderBy('id')
-                              ->load();
+         
 
            if (!empty($data)) {
                 // Desabilitar o botão 'Entrar'
                 TScript::create("$('#tbutton_entrada').prop('disabled', true);");
 
-                
-               
+
 
             }
 
