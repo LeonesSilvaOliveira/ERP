@@ -131,7 +131,7 @@ TScript::create("$('#tbutton_horaRelogio').prop('disabled', true);");
           $name = TSession::getValue('username');
 
          
-
+         var_dump([$data, $id, $name]);
            if (!empty($data)) {
                 // Desabilitar o botão 'Entrar'
                 TScript::create("$('#tbutton_entrada').prop('disabled', true);");
