@@ -144,7 +144,7 @@ class FuncionariosHeaderList extends TPage
         $container->style = 'width: 100%';
         if(empty($param['target_container']))
         {
-            $container->add(TBreadCrumb::create(["Ponto","Funcionarios"]));
+            $container->add(TBreadCrumb::create(["Ponto","Funcionario"]));
         }
 
         $container->add($panel);
