@@ -1,25 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <menu>
   <menuitem label="Ponto">
-    <icon>fab:500px fa-fw </icon>
+    <icon>fas:allergies fa-fw fa-fw</icon>
     <menu>
-      <menuitem label="Bater Ponto">
-        <icon>fab:500px fa-fw </icon>
-        <menu>
-          <menuitem label="Ponto">
-            <icon>far:circle fa-fw </icon>
-            <action>pontoEletronico#method=onShow</action>
-          </menuitem>
-        </menu>
+      <menuitem label="Registrar ponto">
+        <action>pontoEletronico#method=onShow</action>
+        <icon>fab fa fa-fw fa-fw</icon>
       </menuitem>
     </menu>
   </menuitem>
   <menuitem label="Funcionarios">
-    <icon>far:user fa-fw </icon>
+    <icon>far:user fa-fw</icon>
     <menu>
       <menuitem label="Funcionarios">
-        <icon>fas:child fa-fw </icon>
         <action>FuncionariosHeaderList#method=onShow</action>
+        <icon>fas:child fa-fw</icon>
       </menuitem>
     </menu>
   </menuitem>
@@ -27,48 +22,48 @@
     <icon>fas:home fa-fw</icon>
     <menu>
       <menuitem label="Dashboard">
-        <icon>fas:tachometer-alt fa-fw</icon>
         <action>SystemAdministrationDashboard</action>
+        <icon>fas:tachometer-alt fa-fw</icon>
       </menuitem>
       <menuitem label="_t{Programs}">
-        <icon>far:file-code fa-fw</icon>
         <action>SystemProgramList</action>
+        <icon>far:file-code fa-fw</icon>
       </menuitem>
       <menuitem label="_t{Groups}">
-        <icon>fas:users fa-fw</icon>
         <action>SystemGroupList</action>
+        <icon>fas:users fa-fw</icon>
       </menuitem>
       <menuitem label="_t{Units}">
-        <icon>fas:university fa-fw</icon>
         <action>SystemUnitList</action>
+        <icon>fas:university fa-fw</icon>
       </menuitem>
       <menuitem label="_t{Users}">
-        <icon>fas:user fa-fw</icon>
         <action>SystemUserList</action>
+        <icon>fas:user fa-fw</icon>
       </menuitem>
       <menuitem label="_t{Database explorer}">
-        <icon>fas:database fa-fw</icon>
         <action>SystemDatabaseExplorer</action>
+        <icon>fas:database fa-fw</icon>
       </menuitem>
       <menuitem label="_t{SQL Panel}">
-        <icon>fas:table fa-fw</icon>
         <action>SystemSQLPanel</action>
+        <icon>fas:table fa-fw</icon>
       </menuitem>
       <menuitem label="_t{Menu editor}">
-        <icon>far:edit fa-fw</icon>
         <action>SystemMenuEditor</action>
+        <icon>far:edit fa-fw</icon>
       </menuitem>
       <menuitem label="PHP Info">
-        <icon>fas:info-circle fa-fw</icon>
         <action>SystemPHPInfoView</action>
+        <icon>fas:info-circle fa-fw</icon>
       </menuitem>
       <menuitem label="System Information">
-        <icon>fas:desktop fa-fw</icon>
         <action>SystemInformationView</action>
+        <icon>fas:desktop fa-fw</icon>
       </menuitem>
       <menuitem label="_t{Preferences}">
-        <icon>fas:cog fa-fw</icon>
         <action>SystemPreferenceForm#method=onEdit</action>
+        <icon>fas:cog fa-fw</icon>
       </menuitem>
     </menu>
   </menuitem>
@@ -76,20 +71,20 @@
     <icon>far:file-alt fa-fw</icon>
     <menu>
       <menuitem label="_t{Send document}">
-        <icon>fas:cloud-upload-alt fa-fw</icon>
         <action>SystemDocumentUploadForm</action>
+        <icon>fas:cloud-upload-alt fa-fw</icon>
       </menuitem>
       <menuitem label="_t{My documents}">
-        <icon>fas:archive fa-fw</icon>
         <action>SystemDocumentList</action>
+        <icon>fas:archive fa-fw</icon>
       </menuitem>
       <menuitem label="_t{Shared with me}">
-        <icon>fas:share-alt fa-fw</icon>
         <action>SystemSharedDocumentList</action>
+        <icon>fas:share-alt fa-fw</icon>
       </menuitem>
       <menuitem label="_t{Categories}">
-        <icon>fas:th fa-fw</icon>
         <action>SystemDocumentCategoryFormList</action>
+        <icon>fas:th fa-fw</icon>
       </menuitem>
     </menu>
   </menuitem>
@@ -97,37 +92,37 @@
     <icon>fas:desktop fa-fw</icon>
     <menu>
       <menuitem label="Dashboard">
-        <icon>fas:tachometer-alt fa-fw</icon>
         <action>SystemLogDashboard</action>
+        <icon>fas:tachometer-alt fa-fw</icon>
       </menuitem>
       <menuitem label="_t{Access Log}">
-        <icon>fas:key fa-fw</icon>
         <action>SystemAccessLogList</action>
+        <icon>fas:key fa-fw</icon>
       </menuitem>
       <menuitem label="_t{Change Log}">
-        <icon>fas:film fa-fw</icon>
         <action>SystemChangeLogView</action>
+        <icon>fas:film fa-fw</icon>
       </menuitem>
       <menuitem label="_t{SQL Log}">
-        <icon>fas:database fa-fw</icon>
         <action>SystemSqlLogList</action>
+        <icon>fas:database fa-fw</icon>
       </menuitem>
       <menuitem label="_t{Request Log}">
-        <icon>fas:globe fa-fw</icon>
         <action>SystemRequestLogList</action>
+        <icon>fas:globe fa-fw</icon>
       </menuitem>
       <menuitem label="_t{PHP Log}">
-        <icon>fas:exclamation-triangle fa-fw</icon>
         <action>SystemPHPErrorLogView</action>
+        <icon>fas:exclamation-triangle fa-fw</icon>
       </menuitem>
       <menuitem label="Session dump">
-        <icon>fas:code fa-fw</icon>
         <action>SystemSessionDumpView</action>
+        <icon>fas:code fa-fw</icon>
       </menuitem>
     </menu>
   </menuitem>
   <menuitem label="Logout">
-    <icon>fas:sign-out-alt fa-fw</icon>
     <action>LoginForm#method=onLogout#static=1</action>
+    <icon>fas:sign-out-alt fa-fw</icon>
   </menuitem>
 </menu>

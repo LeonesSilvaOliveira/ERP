@@ -5,7 +5,7 @@ class FuncionariosForm extends TPage
     protected $form;
     private $formFields = [];
     private static $database = 'erpbase';
-    private static $activeRecord = 'Funcionarios';
+    private static $activeRecord = 'Funcionario';
     private static $primaryKey = 'id';
     private static $formName = 'form_FuncionariosForm';
 
@@ -118,7 +118,7 @@ class FuncionariosForm extends TPage
 
             $this->form->validate(); // validate form data
 
-            $object = new Funcionarios(); // create an empty object 
+            $object = new Funcionario(); // create an empty object 
 
             $data = $this->form->getData(); // get form data as array
             $object->fromArray( (array) $data); // load the object with data
@@ -163,7 +163,7 @@ class FuncionariosForm extends TPage
                 $key = $param['key'];  // get the parameter $key
                 TTransaction::open(self::$database); // open a transaction
 
-                $object = new Funcionarios($key); // instantiates the Active Record 
+                $object = new Funcionario($key); // instantiates the Active Record 
 
                 $this->form->setData($object); // fill the form 
 

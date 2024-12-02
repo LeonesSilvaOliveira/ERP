@@ -576,3 +576,5 @@ Stack trace:
 [28-Nov-2024 16:12:16 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ERP\app\control\install\DatabaseInstall.class.php on line 138
 [28-Nov-2024 16:13:04 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ERP\app\control\install\DatabaseInstall.class.php on line 63
 [28-Nov-2024 16:13:04 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type bool in C:\xampp\htdocs\ERP\app\control\install\DatabaseInstall.class.php on line 138
+[02-Dec-2024 15:42:24 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected variable "$objeto" in C:\xampp\htdocs\ERP\app\control\teste\Cliente.php on line 23
+[02-Dec-2024 15:42:48 America/Sao_Paulo] PHP Parse error:  syntax error, unexpected variable "$objeto" in C:\xampp\htdocs\ERP\app\control\teste\Cliente.php on line 23

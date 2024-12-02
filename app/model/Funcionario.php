@@ -30,10 +30,6 @@ class Funcionario extends TRecord
         parent::addAttribute('telefone');
         parent::addAttribute('user_id');
         parent::addAttribute('imagem');
-        parent::addAttribute('horario_entrada');
-        parent::addAttribute('horario_descanso');
-        parent::addAttribute('horario_volta_descanso');
-        parent::addAttribute('horario_saida');
             
     }
 
