@@ -1,8 +1,8 @@
 <?php 
 return[
     'host' => "127.0.0.1",
-    'name' => "erpbase2_permission",
-    'user' => "root",
+    'name' => "erpbase_permission",
+    'user' => "",
     'pass' => "",
     'type' => "mysql",
     'prep' => "1",

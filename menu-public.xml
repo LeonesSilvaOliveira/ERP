@@ -3,14 +3,9 @@
   <menuitem label="Ponto">
     <icon>fab:500px fa-fw </icon>
     <menu>
-      <menuitem label="Bater Ponto">
-        <icon>fab:500px fa-fw </icon>
-        <menu>
-          <menuitem label="Ponto">
-            <icon>far:circle fa-fw </icon>
-            <action>pontoEletronico#method=onShow</action>
-          </menuitem>
-        </menu>
+      <menuitem label="Ponto">
+        <icon>far:circle fa-fw </icon>
+        <action>pontoEletronico#method=onShow</action>
       </menuitem>
     </menu>
   </menuitem>
