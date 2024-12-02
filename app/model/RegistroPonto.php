@@ -11,6 +11,7 @@ class RegistroPonto extends TRecord
     const UPDATEDAT  = 'updated_at';
 
     private $fk_id;
+    private $user;
 
     
 
@@ -34,11 +35,11 @@ class RegistroPonto extends TRecord
     }
 
     /**
-     * Method set_funcionarios
-     * Sample of usage: $var->funcionarios = $object;
-     * @param $object Instance of Funcionarios
+     * Method set_funcionario
+     * Sample of usage: $var->funcionario = $object;
+     * @param $object Instance of Funcionario
      */
-    public function set_fk_id(Funcionarios $object)
+    public function set_fk_id(Funcionario $object)
     {
         $this->fk_id = $object;
         $this->id = $object->id;
@@ -47,17 +48,47 @@ class RegistroPonto extends TRecord
     /**
      * Method get_fk_id
      * Sample of usage: $var->fk_id->attribute;
-     * @returns Funcionarios instance
+     * @returns Funcionario instance
      */
     public function get_fk_id()
     {
     
         // loads the associated object
         if (empty($this->fk_id))
-            $this->fk_id = new Funcionarios($this->id);
+            $this->fk_id = new Funcionario($this->id);
     
         // returns the associated object
         return $this->fk_id;
+    }
+    /**
+     * Method set_system_users
+     * Sample of usage: $var->system_users = $object;
+     * @param $object Instance of SystemUsers
+     */
+    public function set_user(SystemUsers $object)
+    {
+        $this->user = $object;
+        $this->user_id = $object->id;
+    }
+
+    /**
+     * Method get_user
+     * Sample of usage: $var->user->attribute;
+     * @returns SystemUsers instance
+     */
+    public function get_user()
+    {
+        try{
+        TTransaction::openFake('permission');
+        // loads the associated object
+        if (empty($this->user))
+            $this->user = new SystemUsers($this->user_id);
+        TTransaction::close();
+        }catch(Exception $e){
+            TTransaction::close();
+        }
+        // returns the associated object
+        return $this->user;
     }
 
     

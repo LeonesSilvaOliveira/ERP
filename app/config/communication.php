@@ -1,11 +1,10 @@
-<?php
-return [
-    'host' => "127.0.0.1", 
-    'user' => "root", 
-    'pass' => "", 
-    'type' => "mysql", 
-    'port' => "3306", 
-    'name' => "erpbase2_communication", 
-    'prep' => "1", 
-    'slog' => "SystemSqlLogService", 
+<?php 
+return[
+    'host' => "127.0.0.1",
+    'name' => "erpbase_communication",
+    'user' => "",
+    'pass' => "",
+    'type' => "mysql",
+    'prep' => "1",
+    'slog' => "SystemSqlLogService"
 ];

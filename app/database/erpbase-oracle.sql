@@ -1,19 +1,15 @@
-CREATE TABLE funcionarios( 
+CREATE TABLE funcionario( 
       id number(10)    NOT NULL , 
-      created_at timestamp(0)    NOT NULL , 
+      created_at timestamp(0)   , 
       deleted_at timestamp(0)   , 
       updated_at timestamp(0)   , 
-      nome varchar  (100)    NOT NULL , 
-      email varchar  (100)    NOT NULL , 
-      senha varchar  (255)    NOT NULL , 
+      nome varchar  (100)   , 
+      email varchar  (100)   , 
+      senha varchar  (255)   , 
       cargo varchar  (50)   , 
       telefone varchar  (20)   , 
       user_id number(10)    NOT NULL , 
-      imagem varchar(3000)    NOT NULL , 
-      horario_entrada timestamp(0)    NOT NULL , 
-      horario_descanso timestamp(0)    NOT NULL , 
-      horario_volta_descanso timestamp(0)    NOT NULL , 
-      horario_saida timestamp(0)    NOT NULL , 
+      imagem varchar(3000)   , 
  PRIMARY KEY (id)) ; 
 
 CREATE TABLE registro_ponto( 
@@ -31,14 +27,14 @@ CREATE TABLE registro_ponto(
  PRIMARY KEY (id)) ; 
 
  
- ALTER TABLE funcionarios ADD UNIQUE (email);
+ ALTER TABLE funcionario ADD UNIQUE (email);
   
- ALTER TABLE registro_ponto ADD CONSTRAINT funcionario_id FOREIGN KEY (id) references funcionarios(id); 
- CREATE SEQUENCE funcionarios_id_seq START WITH 1 INCREMENT BY 1; 
+ ALTER TABLE registro_ponto ADD CONSTRAINT funcionario_id FOREIGN KEY (id) references funcionario(id); 
+ CREATE SEQUENCE funcionario_id_seq START WITH 1 INCREMENT BY 1; 
 
-CREATE OR REPLACE TRIGGER funcionarios_id_seq_tr 
+CREATE OR REPLACE TRIGGER funcionario_id_seq_tr 
 
-BEFORE INSERT ON funcionarios FOR EACH ROW 
+BEFORE INSERT ON funcionario FOR EACH ROW 
 
     WHEN 
 
@@ -46,7 +42,7 @@ BEFORE INSERT ON funcionarios FOR EACH ROW
 
     BEGIN 
 
-        SELECT funcionarios_id_seq.NEXTVAL INTO :NEW.id FROM DUAL; 
+        SELECT funcionario_id_seq.NEXTVAL INTO :NEW.id FROM DUAL; 
 
 END;
 CREATE SEQUENCE registro_ponto_id_seq START WITH 1 INCREMENT BY 1; 

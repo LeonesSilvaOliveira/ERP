@@ -1,19 +1,15 @@
-CREATE TABLE funcionarios( 
+CREATE TABLE funcionario( 
       id  SERIAL    NOT NULL  , 
-      created_at timestamp   NOT NULL  , 
+      created_at timestamp   , 
       deleted_at timestamp   , 
       updated_at timestamp   , 
-      nome varchar  (100)   NOT NULL  , 
-      email varchar  (100)   NOT NULL  , 
-      senha varchar  (255)   NOT NULL  , 
+      nome varchar  (100)   , 
+      email varchar  (100)   , 
+      senha varchar  (255)   , 
       cargo varchar  (50)   , 
       telefone varchar  (20)   , 
       user_id integer   NOT NULL  , 
-      imagem text   NOT NULL  , 
-      horario_entrada timestamp   NOT NULL  , 
-      horario_descanso timestamp   NOT NULL  , 
-      horario_volta_descanso timestamp   NOT NULL  , 
-      horario_saida timestamp   NOT NULL  , 
+      imagem text   , 
  PRIMARY KEY (id)) ; 
 
 CREATE TABLE registro_ponto( 
@@ -31,8 +27,8 @@ CREATE TABLE registro_ponto(
  PRIMARY KEY (id)) ; 
 
  
- ALTER TABLE funcionarios ADD UNIQUE (email);
+ ALTER TABLE funcionario ADD UNIQUE (email);
   
- ALTER TABLE registro_ponto ADD CONSTRAINT funcionario_id FOREIGN KEY (id) references funcionarios(id); 
+ ALTER TABLE registro_ponto ADD CONSTRAINT funcionario_id FOREIGN KEY (id) references funcionario(id); 
  
  CREATE index idx_registro_ponto_id on registro_ponto(id); 

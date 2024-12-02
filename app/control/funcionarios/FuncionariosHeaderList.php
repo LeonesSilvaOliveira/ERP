@@ -8,9 +8,9 @@ class FuncionariosHeaderList extends TPage
     private $loaded;
     private $filter_criteria;
     private static $database = 'erpbase';
-    private static $activeRecord = 'Funcionarios';
+    private static $activeRecord = 'Funcionario';
     private static $primaryKey = 'id';
-    private static $formName = 'formList_Funcionarios';
+    private static $formName = 'formList_Funcionario';
     private $showMethods = ['onReload', 'onSearch'];
     private $limit = 20;
 
@@ -165,7 +165,7 @@ class FuncionariosHeaderList extends TPage
                 TTransaction::open(self::$database);
 
                 // instantiates object
-                $object = new Funcionarios($key, FALSE); 
+                $object = new Funcionario($key, FALSE); 
 
                 // deletes the object from the database
                 $object->delete();
@@ -196,7 +196,6 @@ class FuncionariosHeaderList extends TPage
             new TQuestion(AdiantiCoreTranslator::translate('Do you really want to delete ?'), $action);   
         }
     }
-
     public function onExportCsv($param = null) 
     {
         try
@@ -254,7 +253,6 @@ class FuncionariosHeaderList extends TPage
             new TMessage('error', $e->getMessage()); // shows the exception error message
         }
     }
-
     public function onExportXls($param = null) 
     {
         try
@@ -346,7 +344,6 @@ class FuncionariosHeaderList extends TPage
             new TMessage('error', $e->getMessage()); // shows the exception error message
         }
     }
-
     public function onExportPdf($param = null) 
     {
         try
@@ -388,7 +385,6 @@ class FuncionariosHeaderList extends TPage
             new TMessage('error', $e->getMessage()); // shows the exception error message
         }
     }
-
     public function onExportXml($param = null) 
     {
         try
@@ -496,7 +492,7 @@ class FuncionariosHeaderList extends TPage
             // open a transaction with database 'erpbase'
             TTransaction::open(self::$database);
 
-            // creates a repository for Funcionarios
+            // creates a repository for Funcionario
             $repository = new TRepository(self::$activeRecord);
 
             $criteria = clone $this->filter_criteria;
@@ -597,7 +593,7 @@ class FuncionariosHeaderList extends TPage
             TTransaction::open(self::$database);    
         }
 
-        $object = new Funcionarios($id);
+        $object = new Funcionario($id);
 
         $row = $list->datagrid->addItem($object);
         $row->id = "row_{$object->id}";

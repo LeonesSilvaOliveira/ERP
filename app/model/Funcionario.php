@@ -2,7 +2,7 @@
 
 class Funcionario extends TRecord
 {
-    const TABLENAME  = 'funcionarios';
+    const TABLENAME  = 'funcionario';
     const PRIMARYKEY = 'id';
     const IDPOLICY   =  'serial'; // {max, serial}
 
@@ -78,7 +78,7 @@ class Funcionario extends TRecord
     {
         if(is_array($registro_ponto_fk_id_to_string))
         {
-            $values = Funcionarios::where('id', 'in', $registro_ponto_fk_id_to_string)->getIndexedArray('id', 'id');
+            $values = Funcionario::where('id', 'in', $registro_ponto_fk_id_to_string)->getIndexedArray('id', 'id');
             $this->registro_ponto_fk_id_to_string = implode(', ', $values);
         }
         else

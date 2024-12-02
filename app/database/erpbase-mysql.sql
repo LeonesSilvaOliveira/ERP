@@ -1,19 +1,15 @@
-CREATE TABLE funcionarios( 
+CREATE TABLE funcionario( 
       `id`  INT  AUTO_INCREMENT    NOT NULL  , 
-      `created_at` datetime   NOT NULL  , 
+      `created_at` datetime   , 
       `deleted_at` datetime   , 
       `updated_at` datetime   , 
-      `nome` varchar  (100)   NOT NULL  , 
-      `email` varchar  (100)   NOT NULL  , 
-      `senha` varchar  (255)   NOT NULL  , 
+      `nome` varchar  (100)   , 
+      `email` varchar  (100)   , 
+      `senha` varchar  (255)   , 
       `cargo` varchar  (50)   , 
       `telefone` varchar  (20)   , 
       `user_id` int   NOT NULL  , 
-      `imagem` text   NOT NULL  , 
-      `horario_entrada` datetime   NOT NULL  , 
-      `horario_descanso` datetime   NOT NULL  , 
-      `horario_volta_descanso` datetime   NOT NULL  , 
-      `horario_saida` datetime   NOT NULL  , 
+      `imagem` text   , 
  PRIMARY KEY (id)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci; 
 
 CREATE TABLE registro_ponto( 
@@ -31,6 +27,6 @@ CREATE TABLE registro_ponto(
  PRIMARY KEY (id)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci; 
 
  
- ALTER TABLE funcionarios ADD UNIQUE (email);
+ ALTER TABLE funcionario ADD UNIQUE (email);
   
- ALTER TABLE registro_ponto ADD CONSTRAINT funcionario_id FOREIGN KEY (id) references funcionarios(id); 
+ ALTER TABLE registro_ponto ADD CONSTRAINT funcionario_id FOREIGN KEY (id) references funcionario(id); 

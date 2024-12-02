@@ -1,21 +1,17 @@
 PRAGMA foreign_keys=OFF; 
 
-CREATE TABLE funcionarios( 
+CREATE TABLE funcionario( 
       id  INTEGER    NOT NULL  , 
-      created_at datetime   NOT NULL  , 
+      created_at datetime   , 
       deleted_at datetime   , 
       updated_at datetime   , 
-      nome varchar  (100)   NOT NULL  , 
-      email varchar  (100)   NOT NULL  , 
-      senha varchar  (255)   NOT NULL  , 
+      nome varchar  (100)   , 
+      email varchar  (100)   , 
+      senha varchar  (255)   , 
       cargo varchar  (50)   , 
       telefone varchar  (20)   , 
       user_id int   NOT NULL  , 
-      imagem text   NOT NULL  , 
-      horario_entrada datetime   NOT NULL  , 
-      horario_descanso datetime   NOT NULL  , 
-      horario_volta_descanso datetime   NOT NULL  , 
-      horario_saida datetime   NOT NULL  , 
+      imagem text   , 
  PRIMARY KEY (id)) ; 
 
 CREATE TABLE registro_ponto( 
@@ -31,8 +27,8 @@ CREATE TABLE registro_ponto(
       imagem text   , 
       user_id int   NOT NULL  , 
  PRIMARY KEY (id),
-FOREIGN KEY(id) REFERENCES funcionarios(id)) ; 
+FOREIGN KEY(id) REFERENCES funcionario(id)) ; 
 
  
- CREATE UNIQUE INDEX unique_idx_funcionarios_email ON funcionarios(email);
+ CREATE UNIQUE INDEX unique_idx_funcionario_email ON funcionario(email);
  
